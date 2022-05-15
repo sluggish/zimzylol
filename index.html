@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>zimzy@word ~$ whoami</title>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="title" content="zimzy@word ~$ whoami" />
+        <meta name="description" content="hey lol" />
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="zimzy@word ~$ whoami />
+        <meta property="og:description" content="hey lol" />
+        <link href="./css/style.css" rel="stylesheet" />
+    </head>
+    <script>
+        function bg() {
+            document.body.style.backgroundImage = `url("./assets/background.jpg")`; // Set document back background image
+        }
+    
+        function init() {
+          document.getElementById("force-interaction").removeChild(document.getElementById("force-interaction").children[0]); // Remove "Click here to enter ;)" before fade
+          document.getElementById("force-interaction").style.animation ="fadeout 1.5s normal forwards ease"; // Set animation CSS to fade interaction forcer
+          let audio = document.getElementById("background-audio");
+          audio.volume = 0.3; // change vol
+          audio.play(); // Play background audio
+        }
+    </script>
+  <body onload="javascript:bg();">
+    <noscript>
+      <!-- Can't force interaction without javascript -->
+      <iframe src="./nojs/index.html"></iframe>
+    </noscript>
+    <div onclick="javascript:init();" class="interact" id="force-interaction">
+      <!-- Force interaction with webpage to start music without permission and call random background function-->
+      <h3>Click here to enter</h3>
+    </div>
+        <div class="center_container">
+            <div class="social_container">
+              <a href="https://t.me/bisexualism" target="_blank" rel="noopener noreferrer">
+                <img class="social_icon" src="./assets/telegram.png" />
+              </a>
+              <a href="https://www.instagram.com/zimzyy/" target="_blank" rel="noopener noreferrer">
+                <img class="social_icon" src="./assets/instagram.png" />
+              </a>
+              <a href="https://github.com/sluggish/" target="_blank" rel="noopener noreferrer">
+                <img class="social_icon" src="./assets/github.png" />
+              </a>
+              <a href="https://behance.net/zimzy" target="_blank" rel="noopener noreferrer">
+                <img class="social_icon" src="./assets/behance.png" />
+              </a>
+              <a href="https://twitter.com/z1mzy" target="_blank" rel="noopener noreferrer">
+                <img class="social_icon" src="./assets/twitter.png" />
+              </a>
+            </div>
+          </div>
+            <audio loop preload="auto" id="background-audio">
+                 <source src="./assets/background.mp3" type="audio/mp3" />
+            </audio>
+    </body>
+</html>

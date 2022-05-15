@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Oleo+Script&display=swap');
+
+@keyframes fadeout {
+    to {
+        opacity: 0;
+        display: none;
+        visibility: hidden;
+    }
+}
+
+div.interact {
+    background-color: black;
+    inset: 0;
+    height: 100%;
+    width: 100%;
+    background-position: center center;
+    color: rgb(30, 23, 128);
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    font-family: 'Oleo Script', cursive;
+    font-size: 30px;
+    text-decoration-style: bold;
+    position: fixed;
+    overflow: hidden;
+}
+
+body {
+    background-image: url("../assets/background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    background-color: black;
+    overflow: hidden;
+}
+
+@media screen {
+    body {
+        background-attachment: scroll;
+    }
+}
+
+div.center_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+
+div.social_container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 25px;
+}
+
+img.social_icon {
+    -webkit-transition: all 1s ease-in-out;
+    -moz-transition: all 1s ease-in-out;
+    transition: all 1s ease-in-out;
+    margin: 20px;
+    max-height: 65px;
+}
+
+::selection {
+    cursor: pointer;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    user-select: none !important;
+}
+
+a:hover {
+    transform: scale(1.1);
+}
+
+@media (max-width: 800px) {
+    div.social_container {
+        flex-direction: column;
+    }
+}
