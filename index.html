@@ -12,10 +12,6 @@
         <link href="./css/style.css" rel="stylesheet" />
     </head>
     <script>
-        function bg() {
-            document.body.style.backgroundImage = `url("./assets/background.jpg")`; // Set document back background image
-        }
-    
         function init() {
           document.getElementById("force-interaction").removeChild(document.getElementById("force-interaction").children[0]); // Remove "Click here to enter ;)" before fade
           document.getElementById("force-interaction").style.animation ="fadeout 1.5s normal forwards ease"; // Set animation CSS to fade interaction forcer
@@ -24,6 +20,10 @@
           audio.play(); // Play background audio
         }
     </script>
+    <video muted="muted" loop="" playsinline="" preload="auto" class="fullscreen bg-video" id="video">
+        <source src="assets/bg.mp4" type="video/mp4">
+    </video>
+                                            
   <body onload="javascript:bg();">
     <noscript>
       <!-- Can't force interaction without javascript -->
