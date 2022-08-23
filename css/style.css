@@ -5,24 +5,7 @@
 @font-face {
   font-family: derk;
   src: url(derk.otf);
-}
-  html {
-  font-family: mono;
-  cursor: url("../images/cursor.png"), default;
-}
-*, *::after, *::before {
-  box-sizing: inherit;
-  margin: 0;
-  padding: 0;
-}
-body {
-  background: rgb(17, 17, 17);
-}
-a {
-  cursor: url("../../images/cursor.html"), default;
-  text-decoration:wavy;
-  color:rgb(255, 255, 255)!important
-}
+
 a:hover {
   transition:.4s!important;
   color:rgb(190, 190, 190)!important;
@@ -39,7 +22,7 @@ span::before {
 .debold{
   font-weight:normal
 }
-.socials {
+.social_container {
 display: flex;
 align-items: center;
 justify-content: center;
@@ -167,26 +150,10 @@ body {
     }
 }
 
-div.center_container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-}
-
 @keyframes flicker {
     to {
         box-shadow: none;
     }
-}
-
-div.social_container {
-    display: flex;
-    justify-content: center;
-    background-color: rgba(0, 0, 0, 0.6);
-    border-radius: 25px;
-    box-shadow: 0px 0px 10px 15px rgb(3, 3, 221);
-    animation: flicker 1s steps(2, start) infinite;
 }
 
 img.social_icon {
