@@ -18,12 +18,6 @@
           audio.play(); // Play background audio
         }                                                 
     </script>                                            
-  <body onload="javascript:bg();">
-    <noscript>
-      <!-- Can't force interaction without javascript -->
-     <iframe src="./nojs/index.html"></iframe>
-    </noscript>
-    <div onclick="javascript:init();" class="interact" id="force-interaction">
       <!-- Force interaction with webpage to start music without permission and call random background function-->
             <audio loop preload="auto" id="background-audio">
                  <source src="./assets/background.mp3" type="audio/mp3" />
